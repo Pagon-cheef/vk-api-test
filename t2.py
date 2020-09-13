@@ -1,7 +1,7 @@
 import vk_api
 import pprint
 
-vk_session = vk_api.VkApi(login='89141760725', password='vk_online4Igor', api_version='5.122')
+vk_session = vk_api.VkApi(login='8914XXXXXXX', password='XXXXXXXXXX', api_version='5.122')
 vk_session.auth()
 
 # Позволяет обращаться к методам API как к обычным классам.

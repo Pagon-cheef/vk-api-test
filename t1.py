@@ -1,7 +1,7 @@
 import vk_api
 
 
-# vk_session = vk_api.VkApi(login='89141760725', password='vk_online4Igor', api_version='5.122')
+# vk_session = vk_api.VkApi(login='8914XXXXXXX', password='XXXXXXXXXXXXX', api_version='5.122')
 login = input("Введите Логин VK.com: ")
 password = input("Введите Пароль от VK.com: ")
 
