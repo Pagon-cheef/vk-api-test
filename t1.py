@@ -1,13 +1,17 @@
 import vk_api
 
 
-# vk_session = vk_api.VkApi(login='8914XXXXXXX', password='XXXXXXXXXXXXX', api_version='5.122')
+# login: 8914XXXXXXX
 login = input("Введите Логин VK.com: ")
+# password: XXXXXXXXXXXXX
 password = input("Введите Пароль от VK.com: ")
 
-print("[+] Создаем сессию")
+print("[+] Создаем сессию VK")
 vk_session = vk_api.VkApi(login=login, password=password, api_version='5.122')
-print("[+] Авторизуемся")
+
+print("[+] Авторизуемся в VK")
+# В случае ошибки, API возбуждает исключение
+# TODO: Отловить исключение и показать пользователю в красивом виде
 vk_session.auth()
 
 # Позволяет обращаться к методам API как к обычным классам.
